@@ -17,8 +17,8 @@ const firebaseConfig = {
   measurementId: "G-XWDD3JHGMT"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
-const functions = firebase.functions();
+firebase.initializeApp(firebaseConfig);
+// const functions = firebase.functions();
 
 function hitFirestore() {
   let ftn = firebase.functions().httpsCallable('helloWorld');

@@ -36,7 +36,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button onClick={hitFirestore}>Hit Firestore iter0</button>;
+        <button onClick={hitFirestore}>Hit Firestore iter1</button>;
         <a
           className="App-link"
           href="https://reactjs.org"

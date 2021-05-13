@@ -8,14 +8,16 @@ import firebase from 'firebase/app';
 require("firebase/functions");
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCN00rUJaJCJvG-bMl8iBq2X2az-lCBQAo",
-  authDomain: "rest-api-boilerplate.firebaseapp.com",
-  projectId: "rest-api-boilerplate",
-  storageBucket: "rest-api-boilerplate.appspot.com",
-  messagingSenderId: "350399116535",
-  appId: "1:350399116535:web:112b4f077bd6551b280ff2",
-  measurementId: "G-XWDD3JHGMT"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MSG_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
+
+console.log(firebaseConfig)
 
 const app = firebase.initializeApp(firebaseConfig);
 const functions = firebase.functions();

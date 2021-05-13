@@ -39,6 +39,5 @@ jobs:
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
-          projectId: rest-api-boilerplate
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
